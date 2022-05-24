@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v.2.0.0
+        uses: actions/checkout@v2.0.0
       - name: Set Node.js 12.x
         uses: actions/setup-node@v1.3.0
         with:
@@ -30,4 +30,3 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
-        
